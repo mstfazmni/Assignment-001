@@ -1,0 +1,38 @@
+main{
+    /* background-color: rgba(196, 219, 255, 0.307); */
+    text-align: center;
+    
+    align-items: center;
+}
+
+
+#butt-1{
+    padding: 10px 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(4, 122, 200, 0.871);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#butt-sorting-name{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(115, 4, 200, 0.871);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+#butt-sorting-salary{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(4, 193, 200, 0.871);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}

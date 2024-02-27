@@ -1,0 +1,94 @@
+<!--
+@name: Assignement1
+@Course Code: SODV1201
+@class: Software Development Diploma program.
+@author: Mostafa Zamani.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- =================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- =================================== -->
+    
+</head>
+<!-- =================================== -->
+
+<body>
+
+<!-- header -->
+
+<div class="b-example-divider"></div>
+
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-secondary" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="marktograde.html" class="nav-link px-2 text-white" target="_blank">Mark To Grade</a></li>
+          <li class="nav-item"><a href="staffpage.html" class="nav-link px-2 text-white" target="_blank">Staff Page</a></li>
+          <li class="nav-item"><a href="weather.html" target="_blank" class="nav-link px-2 text-white">Weather</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+    
+    <!-- =================================== -->
+    <main>
+        <img src="g.jpg">
+        <p id="img-showing"></p>
+        <p class="paragraph">I am actively refining my programming skills through the Software Development Diploma program at Bow Valley College in Calgary, Canada.
+            My academic journey has equipped me with a robust foundation in key languages such as HTML, CSS, JavaScript, and Python.<br>
+             During a semester abroad at EMU University in Cyprus, I had the opportunity to broaden my knowledge and apply these skills in an international setting.
+              I am on an exciting trajectory to continually enhance my technical expertise and contribute meaningfully to the dynamic field of software development.
+        </p>
+    </main>
+
+<!-- ===================================footer -->
+
+    <div class="b-example-divider"></div>
+
+        <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="marktograde.html" class="nav-link px-2 text-muted"  target="_blank">Mark To Grade</a></li>
+            <li class="nav-item"><a href="staffpage.html" class="nav-link px-2 text-muted" target="_blank">Staff Page</a></li>
+            <li class="nav-item"><a href="weather.html" target="_blank" class="nav-link px-2 text-muted">Weather</a></li>
+
+            </ul>
+            <p id="date-footer" class="text-center text-muted"></p>
+        </footer>
+</div>
+
+<!-- =================================== -->
+
+<!-- showing the name after 10s -->
+    <script>
+        setTimeout(function(){
+        document.getElementById("img-showing").innerHTML = "Mostafa Zamani";
+    }, 10000)
+
+
+    // date
+    const d = new Date();
+
+    document.getElementById("date-footer").innerHTML = `${d} &copy; 2024 Mostafa Zamani, Copyright @`;
+
+    </script>
+</body>
+</html>
